@@ -1,0 +1,15 @@
+{
+  "name": "digitalteste",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1functions.js",
+  "scripts": {
+    "test": "mocha testes/findCrushListTest.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^8.3.1",
+    "should": "^13.2.3"
+  }
+}
