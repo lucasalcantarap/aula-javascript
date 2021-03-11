@@ -9,7 +9,15 @@ describe("find crush", () => {
     findCrushs.somaCrush(10, 20).should.be.equal(30);
   });
   it('Passar um nome deve retornar mensagem de pessoa não encontrada', () =>{
-      findCrushs.encontra
-  } )
-});
-//38:42
+      findCrushs.encontraCrush('Joselito Marques').should.be.equal('Crush não encontrado')
+  })
+  it('retorna mensagem campo nome está vazio', () => {
+      findCrushs.encontraCrush().should.be.equal('Campo nome está vazio')
+  })
+  it('Retornar mensagem de tipo inválido', () =>{
+    findCrushs.encontraCrush({}).should.be.equal('Tipo inválido')
+  })
+  it('Deve retornar um nome da lista', () => {
+      findCrushs.encontraCrush('Carlos Daniel').should.be.equal('Carlos Daniel')
+  })
+})
